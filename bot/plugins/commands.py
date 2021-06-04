@@ -153,9 +153,9 @@ async def help(bot, update):
 async def about(bot, update):
     
     buttons = [[
-        InlineKeyboardButton('🎬 @MALLUZHUB 🎬', url='https://t.me/MALLUZHUB')
+        InlineKeyboardButton('🎬 MALLUZHUB 🎬', url='https://t.me/MALLUZHUB')
     ],[
-        InlineKeyboardButton('🚧 @malluhubbmovies 🚧', url='https://t.me/malluhubbmovies')
+        InlineKeyboardButton('🚧 malluhubbmovies 🚧', url='https://t.me/malluhubbmovies')
     ],[
         InlineKeyboardButton('🌃 𝙷𝚘𝚖𝚎', callback_data='start'),
         InlineKeyboardButton('𝙲𝚕𝚘𝚜𝚎 🎭', callback_data='close')
