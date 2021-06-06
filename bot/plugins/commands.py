@@ -17,19 +17,19 @@ async def start(bot, update):
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
             if user.status == "kicked out":
-               await update.reply_text("😔 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 🤣🤣🤣**")
+               await update.reply_text("😪 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 🤣🤣🤣**")
                return
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await update.reply_text(
-                text="<b>🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 GROUP 🤭\n\nനിങ്ങൾക് സിനിമകൾ വെന്നോ? അതിനായി ആദ്യം ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യണം... 😁\n\nJoin ചെയ്തതിനു ശേഷം വീണ്ടും ബോട്ട് /start ആക്കൂ.😁</b>",
+                text="<b>😈 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 GROUP 🍁\n\nനിങ്ങൾക് സിനിമകൾ വെന്നോ? അതിനായി ആദ്യം ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യണം... 🤗\n\nJoin ചെയ്തതിനു ശേഷം വീണ്ടും ബോട്ട് /start ആക്കൂ.😎</b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 💢 Join My Updates Channel 💢 ", url=f"https://t.me/{MALLUZHUB}")]
+                    [ InlineKeyboardButton(text=" 🚀 Join My Updates Channel 📺 ", url=f"https://t.me/{MALLUZHUB}")]
               ])
             )
             return
         except Exception:
-            await update.reply_text("<b>This bot should be the admin on your update channel</b>\n\n<b>🗣️ Our Group 🚧 @malluhubbmovies</b>")
+            await update.reply_text("<b>This bot should be the admin on your update channel</b>\n\n<b>❤️ Our Group 🚧 @malluhubbmovies</b>")
             return    
     try:
         file_uid = update.command[1]
